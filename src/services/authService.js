@@ -1,6 +1,6 @@
 // src/services/authService.js
 const CLIENT_ID = '2e6b08b351044408b418683cb45af6dd';
-const REDIRECT_URI = 'http://localhost:3000/';
+const REDIRECT_URI = 'http://pix-list-manager.vercel.app/';
 const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'token';
 
