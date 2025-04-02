@@ -1,0 +1,59 @@
+/* src/pages/SongSearch.css */
+.song-search {
+  background: #121212;
+  color: #fff;
+  padding: 20px;
+  min-height: calc(100vh - 60px);
+}
+.song-search h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.song-search-form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.song-search-form input {
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  width: 300px;
+}
+.song-search-form button {
+  padding: 10px 16px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #e91e63;
+  color: #fff;
+  cursor: pointer;
+}
+.song-search-results ul {
+  list-style: none;
+  padding: 0;
+}
+.song-search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+}
+.song-search-results li.selected {
+  background: #2b2b2b;
+}
+.add-tracks-action {
+  text-align: center;
+  margin-top: 20px;
+}
+.add-tracks-action button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #b300d3;
+  color: #fff;
+  cursor: pointer;
+}

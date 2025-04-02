@@ -1,0 +1,66 @@
+/* src/components/TrackTable.css */
+.track-table-container {
+  background-color: #2f2f2f;
+  border-radius: 8px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.track-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.track-table thead {
+  background-color: var(--header-bg, #a8e6cf);
+}
+
+.track-table th,
+.track-table td {
+  text-align: left;
+  padding: 12px;
+  color: var(--light-text, #fff);
+}
+
+.track-table th {
+  font-weight: 700;
+  border-bottom: 2px solid #3c2a3f;
+}
+
+.track-table tr {
+  border-bottom: 1px solid #3c2a3f;
+}
+
+.track-table tr:hover {
+  background-color: #3c2a3f;
+}
+
+.track-name {
+  max-width: 220px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.progress-bar {
+  position: relative;
+  background-color: #444;
+  border-radius: 4px;
+  width: 100px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background-color: var(--button-bg, #ffb347);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  position: absolute;
+  top: -22px;
+  left: 0;
+  font-size: 0.75rem;
+  color: var(--light-text, #fff);
+}

@@ -1,0 +1,136 @@
+/* Conserver une largeur maximale 100% et utiliser l'espace complet */
+.artist-page {
+  width: 100%;
+  padding: 20px;
+  color: #fff;
+  background-color: #1e1e1e;
+  min-height: calc(100vh - 60px); /* par exemple, si votre header fait 60px */
+}
+
+.artist-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.artist-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.artist-controls label {
+  font-size: 1.2rem;
+  color: #ccc;
+}
+
+.artist-controls button {
+  background: #b300d3;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.albums-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.album-card {
+  background: #2b1d2e;
+  border-radius: 8px;
+  padding: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.album-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.album-info {
+  margin-top: 10px;
+  text-align: center;
+  color: #ccc;
+}
+
+.album-name {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.album-year {
+  font-size: 1rem;
+  color: #999;
+}
+
+.album-checkbox {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  transform: scale(1.3);
+}
+
+.add-albums-action {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.add-albums-action button {
+  background: #e91e63;
+  border: none;
+  padding: 14px 24px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Modal pour les détails d'album (simple) */
+.album-details-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #1e1e1e;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  text-align: center;
+}
+
+.album-details-modal h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.album-details-modal button {
+  background: #b300d3;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}

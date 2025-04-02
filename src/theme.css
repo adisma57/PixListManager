@@ -1,0 +1,20 @@
+/* src/theme.css */
+:root {
+  /* Fond et texte */
+  --dark-background: #222;        /* Noir profond */
+  --light-text: #ddd;             /* Blanc pour le texte */
+  --border-color: #444;           /* Gris foncé pour les bordures */
+
+  /* Couleurs principales */
+  --header-bg: #ff8c00;           /* Orange vif pour le header */
+  --button-bg: #ff8c00;           /* Orange vif pour les boutons */
+  --button-hover-bg: #e07b00;     /* Une teinte légèrement plus foncée pour le hover */
+}
+
+body {
+  background-color: var(--dark-background);
+  color: var(--light-text);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,58 @@
+/* src/pages/PlaylistPage.css */
+.playlist-page {
+  width: 100%;
+  padding: 20px;
+  background-color: var(--dark-background, #121212);
+  color: var(--light-text, #fff);
+  min-height: calc(100vh - 60px);
+}
+
+.playlist-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color, #ddd);
+  border-radius: 4px;
+  background-color: var(--dark-background, #121212);
+  color: var(--light-text, #fff);
+}
+
+.playlist-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.playlist-table th,
+.playlist-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color, #ddd);
+  cursor: pointer;
+}
+
+.playlist-table th {
+  background-color: var(--header-bg, #a8e6cf);
+  font-size: 1.1rem;
+}
+
+.playlist-table tr:hover {
+  background-color: var(--button-hover-bg, #ffa066);
+}
+
+.playlist-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}

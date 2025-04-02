@@ -1,0 +1,50 @@
+Structure du dossier
+Le numéro de série du volume est 3669-184C
+C:.
+|   App.css
+|   App.jsx
+|   index.css
+|   index.js
+|   structure.txt
+|   
++---components
+|       AddAlbumToPlaylistModal.css
+|       AddAlbumToPlaylistModal.jsx
+|       AddToPlaylistModal.css
+|       AddToPlaylistModal.jsx
+|       AddTracksToPlaylistModal.css
+|       AddTracksToPlaylistModal.jsx
+|       AlbumDisplay.jsx
+|       ArtistList.jsx
+|       ArtistSearch.jsx
+|       AuthButton.jsx
+|       Header.css
+|       Header.jsx
+|       PlaylistManager.jsx
+|       Sidebar.css
+|       Sidebar.jsx
+|       TrackTable.css
+|       TrackTable.jsx
+|       
++---pages
+|       AlbumDetails.css
+|       AlbumDetails.jsx
+|       ArtistDetail.css
+|       ArtistDetail.jsx
+|       ArtistPage.css
+|       ArtistPage.jsx
+|       Home.css
+|       Home.jsx
+|       PlaylistDetails.css
+|       PlaylistDetails.jsx
+|       PlaylistPage.css
+|       PlaylistPage.jsx
+|       SearchResults.css
+|       SearchResults.jsx
+|       SongSearch.css
+|       SongSearch.jsx
+|       
+\---services
+        authService.js
+        spotifyService.js
+        

@@ -1,0 +1,92 @@
+/* src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import "./theme.css";
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #121212; /* Fond sombre global */
+  color: #fff;              /* Texte clair */
+  font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+  --color-bg: #1e1e1e;
+  --color-bg-dark: #2b1d2e;
+  --color-primary: #b300d3;
+  --color-accent: #e91e63;
+  --color-text: #fff;
+  --color-text-muted: #ccc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  font-family: 'Roboto', sans-serif;
+  color: var(--color-text);
+}
+
+.app-container {
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+.main-content {
+  padding: 20px;
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+/* Scrollbar customisation (facultatif) */
+.content-area::-webkit-scrollbar {
+  width: 8px;
+}
+.content-area::-webkit-scrollbar-thumb {
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+/* Par exemple, si vous aviez .card ou .container avec un background blanc */
+.card, .container {
+  background-color: transparent !important; /* ou #1e1e1e */
+}
+
+/* src/App.css */
+
+/* Mise en page globale */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: transparent; /* Laisse le background sombre défini dans index.css */
+}
+
+.main-layout {
+  display: flex;
+  flex: 1;
+}
+
+/* Zone principale */
+.content-area {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  /* Pas de background blanc ici */
+}

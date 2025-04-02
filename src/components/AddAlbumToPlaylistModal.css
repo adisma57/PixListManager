@@ -1,0 +1,89 @@
+/* src/components/AddAlbumToPlaylistModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background: var(--dark-background); /* par exemple #121212 */
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--light-text); /* par exemple #fff */
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content h2 {
+  margin: 0 0 15px;
+  font-size: 1.4rem;
+}
+
+.select-playlist-section,
+.new-playlist-section {
+  margin: 15px 0;
+  text-align: left;
+}
+
+.select-playlist-section label,
+.new-playlist-section label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.select-playlist-section select,
+.new-playlist-section input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color); /* par exemple #ddd */
+  border-radius: 4px;
+  background-color: var(--dark-background);
+  color: var(--light-text);
+  outline: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-actions button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.modal-actions button:nth-child(1) {
+  background-color: var(--button-bg); /* par exemple, var(--pastel-orange) */
+  color: var(--light-text);
+}
+
+.modal-actions button:nth-child(1):hover {
+  background-color: var(--button-hover-bg); /* par exemple, une teinte plus foncée */
+}
+
+.modal-actions button:nth-child(2) {
+  background-color: #444;
+  color: var(--light-text);
+}
+
+.modal-actions button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
